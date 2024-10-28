@@ -1,0 +1,81 @@
+.heroContent {
+  background-image: url("https://bogatyr.club/uploads/posts/2021-11/1636932875_1-bogatyr-club-p-fioletovii-fon-dlya-rabochego-stola-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000058;
+    z-index: 0;
+  }
+  .content {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    h1 {
+      z-index: 1;
+      font-weight: 500;
+      span {
+        color: darkorchid;
+      }
+    }
+    .welcomeInfo {
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+      }
+      p {
+        width: 500px;
+        line-height: 25px;
+      }
+    }
+    .input {
+      z-index: 1;
+      width: 60%;
+      height: 40px;
+      background: white;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      input {
+        width: 85%;
+        height: 100%;
+        border-radius: 50px;
+        border: none;
+        padding-inline: 20px;
+        background: transparent;
+      }
+      button {
+        width: 15%;
+        height: 100%;
+        border: none;
+        background: transparent;
+        border-left: 2px solid black;
+        color: darkorchid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-weight: 600;
+      }
+    }
+  }
+}
